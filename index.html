@@ -1,100 +1,213 @@
-@ -0,0 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE HTML>
+<html>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Pembuka</title>
-    <style>
-        /* Gaya CSS */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        section {
-            padding: 20px;
-            text-align: justify;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Selamat Datang di Website Kami</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="gallery.html">Galeri</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Kontak</a></li>
+    <meta description="Juma Chaje Portfolio #Software Engineer" content="projects done by Juma Chaje, about, and contacts.">
+    <title>Tugas Web</title>
+    <link rel="shortcut icon" type="image/png" href="images/juma1.png">
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+
+  </head>
+
+  <body>
+    
+
+
+      <header id="header">
+        <div class="logo">
+          <h1>Yosefina<span>Lenzun</span></h1>
+        </div>
+        <div class="menu">
+          <div id="menu_btn">
+            <p ><i class="fa fa-bars"></i></p>
+          </div>
+          <nav>
+            <ul id="menu">
+              <li><a href="#about">About</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#galery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+          </nav>
+        </div>
+      </header>
 
-    <section>
-        <article>
-            <h2>Pentingnya Olahraga Bagi Tubuh</h2>
-            <p>Olahraga merupakan bagian penting dari gaya hidup sehat. Melakukan aktivitas fisik secara teratur memiliki banyak manfaat bagi kesehatan tubuh dan pikiran.</p>
-            <p>Beberapa manfaat olahraga bagi tubuh antara lain:</p>
+    <main>
+      <section id="section_1">
+  
+        <div class="part_2">
+          <p>Hello, <span id="visitor"></span> My name is <b>Yosefina Lenzun</b> </p>
+
+          <div class="typing_part">
+            <p><span class="typing"></span></p>
+          </div>
+
+        </div>
+      </section>
+
+
+
+  
+
+      <section id="projects" class="blog">
+        <div class="part_1" id="blog">
+          <h2>Artikel</h2>
+        </div>
+
+   
+
+       
+        <div class="part_2">
+          <div class="loading_screen">
+            <div class="boxLoading"></div>
+          </div>
+
+          <div class="container">
+             <!--- Projects will be dynamically shown from local json data--->
+            <div class="p_cards">
+              <div class="p_image">
+                <img src="images/Artikel1.jpg" width="100%" height="100%" alt="${project.name} image">
+              </div>
+              <div class="info">
+                <h4>Menjaga Keseimbangan Mental: Pentingnya Istirahat dan Rekreasi dalam Kehidupan Sehari-hari</h4>
+         
+                <a href="#" target="_blank" ><button class="btn">Selengkapnya <i
+                      class="fa fa-globe"></i></button></a>
+              </div>
+            </div>
+              <div class="p_cards">
+                <div class="p_image">
+                  <img src="images/Artikel2.jpg" width="100%" height="100%" alt="${project.name} image">
+                </div>
+                <div class="info">
+                  <h4>Strategi Pengembangan Karier: Membangun Jalan Menuju Kesuksesan Profesional</h4>
+              
+                  <a href="#" target="_blank"><button class="btn">Selengkapnya <i class="fa fa-globe"></i></button></a>
+                </div>
+              </div>
+                <div class="p_cards">
+                  <div class="p_image">
+                    <img src="images/Artikel3.jpg" width="100%" height="100%" alt="${project.name} image">
+                  </div>
+                  <div class="info">
+                    <h4>Pengalaman Makanan Dunia: Menjelajahi Kelezatan Kuliner Internasional</h4>
+                
+                    <a href="#" target="_blank"><button class="btn">Selengkapnya <i class="fa fa-globe"></i></button></a>
+                  </div>
+                </div>
+          </div>
+          
+          
+        </div>
+      </section>
+      <section id="projects" class="galery">
+        <div class="part_1" id="galery">
+          <h2>Gallery</h2>
+        </div>
+
+   
+
+       
+        <div class="part_2">
+          <div class="loading_screen">
+            <div class="boxLoading"></div>
+          </div>
+
+          <div class="container">
+             <!--- Projects will be dynamically shown from local json data--->
+            <div class="p_cards">
+              <div class="p_cards">
+                <img src="images/Gambar1.jpg" width="100%" height="100%" alt="${project.name} image">
+              </div>
+          
+            </div>
+            <div class="p_cards">
+              <div class="p_cards">
+                <img src="images/Gambar2.jpg" width="100%" height="100%" alt="${project.name} image">
+              </div>
+            
+            </div>
+            <div class="p_cards">
+              <div class="p_cards">
+                <img src="images/Gambar3.jpg" width="100%" height="100%" alt="${project.name} image">
+              </div>
+            
+            </div>
+            <div class="p_cards">
+              <div class="p_cards">
+                <img src="images/Gambar4.jpg" width="100%" height="100%" alt="${project.name} image">
+              </div>
+            
+            </div>
+            <div class="p_cards">
+              <div class="p_cards">
+                <img src="images/Gambar5.jpg" width="100%" height="100%" alt="${project.name} image">
+              </div>
+            
+            </div>
+            <div class="p_cards">
+              <div class="p_cards">
+                <img src="images/Gambar6.jpg" width="100%" height="100%" alt="${project.name} image">
+              </div>
+            
+            </div>
+          </div>
+          
+          
+        </div>
+        
+      </section>
+
+      <section id="contact">
+         <div class="part_1">
+          <h2>Contact me</h2>
+        </div>
+
+        <div class="part_2">
+          <div class="info">
+   
             <ul>
-                <li>Meningkatkan kekuatan otot dan tulang</li>
-                <li>Meningkatkan kesehatan jantung dan sistem kardiovaskular</li>
-                <li>Menurunkan risiko obesitas dan penyakit terkait obesitas</li>
-                <li>Meningkatkan kesehatan mental dan suasana hati</li>
-                <li>Membantu mengontrol tekanan darah dan kadar gula darah</li>
+              <li>
+                 <i class="fa fa-user"></i>
+                 <h4>Name</h4>
+                 <p>Yosefina Lenzun</p>
+              </li>
+              <li>
+                 <i class="fa fa-phone"></i>
+                 <h4>Phone</h4>
+                 <p>+62 895-3975-17419</p>
+              </li>
+              <li>
+                 <i class="fa fa-envelope"></i>
+                 <h4>Email</h4>
+                 <p>Vinalenzun@gmail.com</p>
+              </li>
+
             </ul>
-            <p>Untuk menjaga kesehatan, penting untuk melakukan olahraga secara teratur, minimal 30 menit setiap hari atau sesuai dengan rekomendasi dari dokter atau ahli kesehatan.</p>
-        </article>
+          </div>
 
-        <article>
-            <h2>Olahraga untuk Kesehatan Mental</h2>
-            <p>Selain manfaat fisik, olahraga juga memiliki dampak positif pada kesehatan mental. Aktivitas fisik dapat membantu mengurangi stres, kecemasan, dan depresi. Selama berolahraga, tubuh melepaskan endorfin, hormon yang dapat meningkatkan suasana hati dan mengurangi rasa sakit. Ini membuat olahraga menjadi alat yang efektif untuk menjaga keseimbangan emosional dan mental.</p>
-        </article>
+          
 
-        <article>
-            <h2>Tips Memulai Rutinitas Olahraga</h2>
-            <p>Memulai rutinitas olahraga bisa menjadi tantangan bagi banyak orang. Berikut adalah beberapa tips untuk membantu Anda memulai:</p>
-            <ul>
-                <li>Pilih aktivitas yang Anda nikmati</li>
-                <li>Tetapkan tujuan yang realistis dan terukur</li>
-                <li>Jadwalkan waktu untuk olahraga secara teratur</li>
-                <li>Berlatih dengan teman atau keluarga untuk meningkatkan motivasi</li>
-                <li>Ingatlah untuk memulai dengan intensitas yang sesuai dan meningkatkan secara bertahap</li>
-            </ul>
-            <p>Dengan mengikuti tips ini, Anda dapat membangun rutinitas olahraga yang sehat dan berkelanjutan.</p>
-        </article>
-    </section>
+      
+      </section>
 
-    <footer>
-        <p>Hak Cipta &copy; 2024. Semua Hak Dilindungi.</p>
-    </footer>
-</body>
-</html>
+   
+
+      <footer id="footer">
+         <h2>Tugas</h2>
+         <p>Pemrograman Web</p>
+
+          <div id="top">
+            <p><a href="#section_1"><i class="fa fa-arrow-up"></i></a></p>
+          </div>
+      </footer>
+    </main>
+    <script src="script/script.js"></script>
+  </body>
