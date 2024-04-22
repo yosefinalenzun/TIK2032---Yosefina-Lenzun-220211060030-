@@ -69,42 +69,22 @@
             <div class="boxLoading"></div>
           </div>
 
-          <div class="container">
+          <div class="container" id="blogContainer">
              <!--- Projects will be dynamically shown from local json data--->
-            <div class="p_cards">
-              <div class="p_image">
-                <img src="images/Artikel1.jpg" width="100%" height="100%" alt="${project.name} image">
-              </div>
-              <div class="info">
-                <h4>Menjaga Keseimbangan Mental: Pentingnya Istirahat dan Rekreasi dalam Kehidupan Sehari-hari</h4>
-         
-                <a href="#" target="_blank" ><button class="btn">Selengkapnya <i
-                      class="fa fa-globe"></i></button></a>
-              </div>
-            </div>
-              <div class="p_cards">
-                <div class="p_image">
-                  <img src="images/Artikel2.jpg" width="100%" height="100%" alt="${project.name} image">
-                </div>
-                <div class="info">
-                  <h4>Strategi Pengembangan Karier: Membangun Jalan Menuju Kesuksesan Profesional</h4>
-              
-                  <a href="#" target="_blank"><button class="btn">Selengkapnya <i class="fa fa-globe"></i></button></a>
-                </div>
-              </div>
-                <div class="p_cards">
-                  <div class="p_image">
-                    <img src="images/Artikel3.jpg" width="100%" height="100%" alt="${project.name} image">
-                  </div>
-                  <div class="info">
-                    <h4>Pengalaman Makanan Dunia: Menjelajahi Kelezatan Kuliner Internasional</h4>
+           
+          
                 
-                    <a href="#" target="_blank"><button class="btn">Selengkapnya <i class="fa fa-globe"></i></button></a>
-                  </div>
-                </div>
           </div>
+         
           
           
+        </div>
+        <div style="text-align:center;">
+        
+        
+          <a href="#blog" class="btn" onclick="loadBlog()" id="loadBlogButton">Tekan Untuk Melihat Artikel</a>
+          <a href="#blog" class="btn" onclick="previousBlog()" id="previousBlogButton" style="display: none">Sebelumnya</a>
+          <a href="#blog" class="btn" onclick="nextBlog()" id="nextBlogButton" style="display: none;">next</a>
         </div>
       </section>
       <section id="projects" class="galery">
@@ -120,49 +100,20 @@
             <div class="boxLoading"></div>
           </div>
 
-          <div class="container">
+          <div class="container" id="galleryContainer">
              <!--- Projects will be dynamically shown from local json data--->
-            <div class="p_cards">
-              <div class="p_cards">
-                <img src="images/Gambar1.jpg" width="100%" height="100%" alt="${project.name} image">
-              </div>
-          
-            </div>
-            <div class="p_cards">
-              <div class="p_cards">
-                <img src="images/Gambar2.jpg" width="100%" height="100%" alt="${project.name} image">
-              </div>
-            
-            </div>
-            <div class="p_cards">
-              <div class="p_cards">
-                <img src="images/Gambar3.jpg" width="100%" height="100%" alt="${project.name} image">
-              </div>
-            
-            </div>
-            <div class="p_cards">
-              <div class="p_cards">
-                <img src="images/Gambar4.jpg" width="100%" height="100%" alt="${project.name} image">
-              </div>
-            
-            </div>
-            <div class="p_cards">
-              <div class="p_cards">
-                <img src="images/Gambar5.jpg" width="100%" height="100%" alt="${project.name} image">
-              </div>
-            
-            </div>
-            <div class="p_cards">
-              <div class="p_cards">
-                <img src="images/Gambar6.jpg" width="100%" height="100%" alt="${project.name} image">
-              </div>
-            
-            </div>
+           
           </div>
           
           
         </div>
+        <div style="text-align:center;">
         
+        
+          <a href="#galery" class="btn" onclick="loadGallery()" id="loadGalleryButton">Tekan Untuk Melihat Gallery</a>
+          <a href="#galery" class="btn" onclick="previousGallery()" id="previousGalleryButton" style="display: none">Sebelumnya</a>
+          <a href="#galery" class="btn" onclick="nextGallery()" id="nextGalleryButton" style="display: none;">next</a>
+        </div>
       </section>
 
       <section id="contact">
@@ -209,5 +160,5 @@
           </div>
       </footer>
     </main>
-    <script src="script/script.js"></script>
+    <script src="script.js"></script>
   </body>
